@@ -1,0 +1,14 @@
+name: handleLogin case
+request:
+  method: POST
+  path: /api/handleLogin
+  headers: {}
+  body:
+    email: testuser@example.com
+    password: password123
+expect:
+  status: 200
+  body:
+    email: testuser@example.com
+    token: EXISTS:true
+
